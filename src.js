@@ -72,7 +72,7 @@ function playGame() {
   } else if (humanScore < computerScore) {
     console.log("Game Over!!!");
   } else {
-    console.log("Jogo terminou empatado!");
+    console.log("O jogo terminou empatado!");
   }
   console.log(`Placar: Você ${humanScore} X PC ${computerScore}`);
   console.log("==========================================");
