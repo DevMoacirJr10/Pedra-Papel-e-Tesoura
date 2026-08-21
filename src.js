@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
   let number = 3;
   let resultado;
@@ -15,13 +18,20 @@ function getComputerChoice() {
   return resultado;
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+  let escolha = prompt("Escolha: Pedra, Papel ou Tesoura");
 
-/*function playRound(humanChoice, computerChoice) {
+  return escolha;
+}
+
+function playRound(humanChoice, computerChoice) {
 
 }
 
-const humanSelection = getHumanChoice();
+console.log(getHumanChoice());
+console.log(getComputerChoice());
+
+/*const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);*/
