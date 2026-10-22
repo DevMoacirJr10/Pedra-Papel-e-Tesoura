@@ -1,0 +1,131 @@
+:root {
+    --cor-primaria: rgb(67,131,195);
+    --cor-secundaria: rgb(48, 180, 203);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    min-height: 100vh; 
+    overflow: hidden;
+    background-image: linear-gradient(90deg, var(--cor-primaria) 20%, var(--cor-secundaria) 98%);
+    font-family: "Luckiest Guy", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.title-jokenpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 50px;
+    gap: 5px;
+}
+
+.title-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn-pedra, 
+#btn-papel,
+#btn-tesoura {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 80px;
+    background-color: white;
+    border: black double;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-family: "Luckiest Guy", cursive;
+}
+
+#btn-pedra:hover, 
+#btn-papel:hover,
+#btn-tesoura:hover,
+#btn-reload:hover {
+    transform: translateY(-4px); 
+    background-color: white;
+}
+
+#btn-reload {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: black double;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.game-results {
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   min-height: 350px;
+   gap: 2px;
+}
+
+.title-placar {
+    font-weight: 200;
+}
+
+.title-round {
+    font-weight: 200;
+    color: purple;
+}
+
+.menssagem-final {
+    font-weight: 200;
+}
+
+.menssagem-final-v {
+    color: rgb(4, 212, 4);
+    font-size: 20px;
+    font-weight: 200
+}
+
+.menssagem-final-d {
+    color: red;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.menssagem-final-e {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.sp-player {
+    color: purple;
+}
+
+.sp-pc {
+    color: orangered;
+}
+
+.container-btn-reload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
