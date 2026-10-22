@@ -3,10 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedra, Papel e Tesoura</title>
+  <title>Jokenpô</title>
+  <link rel="icon" type="png" href="img/pedra-papel-tesoura.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <h1 class="title-jokenpo">
+    Jokenpô
+    <img src="img/pedra-papel-tesoura.png" alt="Pedra, papel e tesoura" height="60px" width="60px">
+  </h1>
+  <h2 class="title-choice">Escolha:</h2>
+  <div class="container-btn">
+    <button id="btn-pedra">
+      <img src="img/pedra.png" alt="Pedra" height="30px" width="30px">
+      Pedra
+    </button>
+    <button id="btn-papel">
+      <img src="img/papel.png" alt="Papel" height="30px" width="30px">
+      Papel
+    </button>
+    <button id="btn-tesoura">
+      <img src="img/tesoura.png" alt="Tesoura" height="30px" width="30px">
+      Tesoura
+    </button>
+  </div>
+  <div class="game-results">
+    <h2 class="title-placar
+    ">Placar Geral</h2>
+    <div id="round-atual"></div>
+    <div id="menssagem-atual"></div>
+    <div id="placar-atual"></div>
+  </div>
+  <div class="container-btn-reload">
+    <button id="btn-reload">Reiniciar o Jogo</button>
+  </div>
 </body>
 <script src="src.js"></script>
 </html>
